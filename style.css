@@ -1,0 +1,196 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+
+/* =================
+   Typography 
+   ================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+/* To control the <p> element directly after the <h1> */
+h1+p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2+p {
+    font-weight: 900;
+    color: #F18119;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    margin-top: 0;
+    padding-top: 2px;
+    letter-spacing: 1px;
+    color: #F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+    border-top: 5px solid;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-weight: 900;
+    display: block;
+}
+
+
+
+
+/* =================
+   Intro section 
+   ================= */
+.intro {
+     background-image: url("images/dark-ribs.jpg"); 
+    background-size: cover;
+    background-color: #404040;
+    background-position: center;
+    padding: 0 .25em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+/* =================
+   main section 
+   ================= */
+
+
+.main-content {
+    padding: 2em 1em;
+
+}
+
+/* select dirct childs in these containers */
+.intro>*,
+.main-content>* {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =================
+   form
+   ================= */
+
+.email-collector {
+    width: 80%;
+    max-width: 200px;
+}
+
+input,
+.btn {
+
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .25em;
+    border: #404040 1px solid;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    
+}
+
+.btn-primary {
+    background-image: linear-gradient(45deg, #FFA51D, #FF713B);
+    color: #FFF;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus ,
+input:hover,
+input:focus{
+    transform: scale(1.1);
+}
+
+
+/* =================
+   media queries 
+   ================= */
+
+@media (min-width:530px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1+p {
+        font-size: 1.75rem;
+    }
+
+   .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+
+    }
+  
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+}
