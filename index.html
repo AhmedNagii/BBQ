@@ -19,7 +19,7 @@
        
     </section>
     <!---->
-    <section class="main-content">
+    <section id="Main-Content" class="main-content">
         <h2>Become a BBQ master! </h2>
         <p>Register Today</p>
         <p>BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art!
@@ -27,9 +27,9 @@
             webinar!</p>
         form will go here
 
-        <form action="#" method="post" class="email-collector">
-            <input type="text" placeholder="first name" required>
-            <input type="email" placeholder="Email" required>
+        <form id="email-collector" action="#" method="post" class="email-collector">
+            <input name="firstName" type="text" placeholder="first name" required>
+            <input name="emailAddress" type="email" placeholder="Email" required>
             <button class="btn btn-primary" type="submit">REGISTER</button>
         </form>
         <p class="fine-print">
@@ -38,7 +38,8 @@
     </section>
 
 
-
+<script src="index.js">
+</script>
 </body>
 
 </html>
