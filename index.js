@@ -1,5 +1,5 @@
 
-document.getElementById('email-collector').emailCollecterForm.addEventListener('submit', event =>{
+document.getElementById('email-collector').addEventListener('submit', event =>{
     event.preventDefault();
 
     let ourFormData = new FormData(event.target);   
